@@ -31,20 +31,29 @@ struct Profile: View {
                         .shadow(radius: 20)
                 }
                 
+                
                 StudentInformation(nomeEstudante: nomeEstudante, curso: cursoEstudante, instituicao: instituicaoEstudante)
                     .padding(.bottom)
                 
-                Divider()
-                    .padding(.bottom)
                 
-                SummaryCard(cornerSize: 20)
-                
-                
+                Form{
+                    Group{
+                        Image(systemName: "info.circle")
+                        Text("Informações Gerais")
+                    }
+                    Group{
+                        Text("Média Geral")
+                        Text("Disciplinas cursadas")
+                    }
+                }
                 
                 
                 
             }
+            
         }
+        //TODO: - Implantar botão de configuração no toolbar ddesta view
+        .toolbar(content: Image(systemName: "gearshape"))
     }
 }
 

@@ -20,9 +20,15 @@ struct SummaryCard: View {
                 .foregroundColor(cardColor)
             
             VStack{
-                
+                HStack{
+                    Image(systemName: "info.circle")
+                    Text("Informações Gerais")
+                    
+                }
             }
         }
+        
+        
     }
 }
 
