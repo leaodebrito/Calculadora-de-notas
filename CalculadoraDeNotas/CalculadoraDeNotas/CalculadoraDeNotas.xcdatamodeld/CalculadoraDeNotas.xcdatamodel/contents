@@ -10,4 +10,10 @@
         <attribute name="nota4" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Estudante" representedClassName="Estudante" syncable="YES" codeGenerationType="class">
+        <attribute name="curso" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="instituicao" optional="YES" attributeType="String"/>
+        <attribute name="nome" optional="YES" attributeType="String"/>
+    </entity>
 </model>

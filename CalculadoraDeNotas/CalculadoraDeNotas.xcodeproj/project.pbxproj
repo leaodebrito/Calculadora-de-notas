@@ -7,22 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C129B208295F6D3E00066555 /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B207295F6D3E00066555 /* Foto.swift */; };
+		C129B20A295F7E4200066555 /* ProfileBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B209295F7E4200066555 /* ProfileBackground.swift */; };
+		C129B20C295F85C800066555 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20B295F85C800066555 /* StudentInformation.swift */; };
+		C129B20E295F8B9700066555 /* SummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20D295F8B9700066555 /* SummaryCard.swift */; };
+		C129B210295F90EC00066555 /* ColorsOfAPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20F295F90EC00066555 /* ColorsOfAPP.swift */; };
 		C1449116295F611600057739 /* CalculadoraDeNotasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */; };
 		C1449118295F611600057739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449117295F611600057739 /* ContentView.swift */; };
 		C144911A295F611800057739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1449119295F611800057739 /* Assets.xcassets */; };
 		C144911D295F611800057739 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C144911C295F611800057739 /* Preview Assets.xcassets */; };
 		C144911F295F611800057739 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144911E295F611800057739 /* Persistence.swift */; };
 		C1449122295F611800057739 /* CalculadoraDeNotas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1449120295F611800057739 /* CalculadoraDeNotas.xcdatamodeld */; };
+		C144912C295F65A500057739 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144912B295F65A500057739 /* File.swift */; };
+		C144912F295F660700057739 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144912E295F660700057739 /* Profile.swift */; };
+		C1449131295F661300057739 /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449130295F661300057739 /* Disciplines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C1449112295F611600057739 /* CalculadoraDeNotas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculadoraDeNotas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C129B207295F6D3E00066555 /* Foto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = "<group>"; };
+		C129B209295F7E4200066555 /* ProfileBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBackground.swift; sourceTree = "<group>"; };
+		C129B20B295F85C800066555 /* StudentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
+		C129B20D295F8B9700066555 /* SummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCard.swift; sourceTree = "<group>"; };
+		C129B20F295F90EC00066555 /* ColorsOfAPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsOfAPP.swift; sourceTree = "<group>"; };
+		C1449112295F611600057739 /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraDeNotasApp.swift; sourceTree = "<group>"; };
 		C1449117295F611600057739 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1449119295F611800057739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C144911C295F611800057739 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C144911E295F611800057739 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C1449121295F611800057739 /* CalculadoraDeNotas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalculadoraDeNotas.xcdatamodel; sourceTree = "<group>"; };
+		C144912B295F65A500057739 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C144912E295F660700057739 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C1449130295F661300057739 /* Disciplines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C129B206295F6D1C00066555 /* View elements */ = {
+			isa = PBXGroup;
+			children = (
+				C129B207295F6D3E00066555 /* Foto.swift */,
+				C129B209295F7E4200066555 /* ProfileBackground.swift */,
+				C129B20B295F85C800066555 /* StudentInformation.swift */,
+				C129B20D295F8B9700066555 /* SummaryCard.swift */,
+			);
+			path = "View elements";
+			sourceTree = "<group>";
+		};
 		C1449109295F611600057739 = {
 			isa = PBXGroup;
 			children = (
@@ -47,7 +74,7 @@
 		C1449113295F611600057739 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1449112295F611600057739 /* CalculadoraDeNotas.app */,
+				C1449112295F611600057739 /* Notas.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,8 +84,11 @@
 			children = (
 				C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */,
 				C1449117295F611600057739 /* ContentView.swift */,
-				C1449129295F61F700057739 /* Models */,
 				C1449128295F61EB00057739 /* View */,
+				C1449129295F61F700057739 /* Models */,
+				C144912D295F65E100057739 /* Subviews */,
+				C129B206295F6D1C00066555 /* View elements */,
+				C144912A295F657E00057739 /* Helper */,
 				C1449119295F611800057739 /* Assets.xcassets */,
 				C144911E295F611800057739 /* Persistence.swift */,
 				C1449120295F611800057739 /* CalculadoraDeNotas.xcdatamodeld */,
@@ -78,6 +108,8 @@
 		C1449128295F61EB00057739 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C144912E295F660700057739 /* Profile.swift */,
+				C1449130295F661300057739 /* Disciplines.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,12 +121,28 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C144912A295F657E00057739 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C144912B295F65A500057739 /* File.swift */,
+				C129B20F295F90EC00066555 /* ColorsOfAPP.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C144912D295F65E100057739 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C1449111295F611600057739 /* CalculadoraDeNotas */ = {
+		C1449111295F611600057739 /* Notas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1449125295F611800057739 /* Build configuration list for PBXNativeTarget "CalculadoraDeNotas" */;
+			buildConfigurationList = C1449125295F611800057739 /* Build configuration list for PBXNativeTarget "Notas" */;
 			buildPhases = (
 				C144910E295F611600057739 /* Sources */,
 				C144910F295F611600057739 /* Frameworks */,
@@ -104,9 +152,9 @@
 			);
 			dependencies = (
 			);
-			name = CalculadoraDeNotas;
+			name = Notas;
 			productName = CalculadoraDeNotas;
-			productReference = C1449112295F611600057739 /* CalculadoraDeNotas.app */;
+			productReference = C1449112295F611600057739 /* Notas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C1449111295F611600057739 /* CalculadoraDeNotas */,
+				C1449111295F611600057739 /* Notas */,
 			);
 		};
 /* End PBXProject section */
@@ -159,9 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C129B210295F90EC00066555 /* ColorsOfAPP.swift in Sources */,
+				C1449131295F661300057739 /* Disciplines.swift in Sources */,
+				C144912C295F65A500057739 /* File.swift in Sources */,
+				C129B20E295F8B9700066555 /* SummaryCard.swift in Sources */,
+				C144912F295F660700057739 /* Profile.swift in Sources */,
 				C1449122295F611800057739 /* CalculadoraDeNotas.xcdatamodeld in Sources */,
+				C129B20A295F7E4200066555 /* ProfileBackground.swift in Sources */,
 				C144911F295F611800057739 /* Persistence.swift in Sources */,
+				C129B208295F6D3E00066555 /* Foto.swift in Sources */,
 				C1449118295F611600057739 /* ContentView.swift in Sources */,
+				C129B20C295F85C800066555 /* StudentInformation.swift in Sources */,
 				C1449116295F611600057739 /* CalculadoraDeNotasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1449125295F611800057739 /* Build configuration list for PBXNativeTarget "CalculadoraDeNotas" */ = {
+		C1449125295F611800057739 /* Build configuration list for PBXNativeTarget "Notas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1449126295F611800057739 /* Debug */,
