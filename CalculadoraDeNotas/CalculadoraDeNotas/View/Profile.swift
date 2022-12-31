@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-//TODO: - Implementar botão de configuração no Navigation Bar
-///O .navigationBarItem vai ser descontinuado, e no lugar será usado .toolbar, porém o método não está funcionando direito, pesquisar o porque
 
 struct Profile: View {
     
@@ -21,39 +19,37 @@ struct Profile: View {
 
     
     var body: some View {
-        ScrollView{
-            VStack{
-                ZStack{
-                    ProfileBackground()
-                        .ignoresSafeArea()
-                        .offset(y: -100)
-                    Foto()
-                        .offset(y: 30)
-                        .shadow(radius: 20)
+        NavigationStack{
+            ScrollView{
+                VStack{
+                    ZStack{
+                        ProfileBackground()
+                            .ignoresSafeArea()
+                            .offset(y: -100)
+                        Foto()
+                            .offset(y: 30)
+                            .shadow(radius: 20)
+                    }
+                    
+                    
+                    StudentInformation(nomeEstudante: nomeEstudante, curso: cursoEstudante, instituicao: instituicaoEstudante)
+                        .padding(.bottom)
+                    
+                    
                 }
                 
-                
-                StudentInformation(nomeEstudante: nomeEstudante, curso: cursoEstudante, instituicao: instituicaoEstudante)
-                    .padding(.bottom)
-                
-                
-                Form{
-                    Group{
-                        Image(systemName: "info.circle")
-                        Text("Informações Gerais")
-                    }
-                    Group{
-                        Text("Média Geral")
-                        Text("Disciplinas cursadas")
-                    }
+            }
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button(action: {
+                        print("funcionando")
+                    }, label: {
+                        Image(systemName: "gearshape")
+                    })
                 }
-                
-                
-                
             }
             
         }
-        
     }
 }
 

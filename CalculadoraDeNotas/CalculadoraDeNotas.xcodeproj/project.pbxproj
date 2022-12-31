@@ -21,6 +21,7 @@
 		C144912C295F65A500057739 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144912B295F65A500057739 /* File.swift */; };
 		C144912F295F660700057739 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144912E295F660700057739 /* Profile.swift */; };
 		C1449131295F661300057739 /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449130295F661300057739 /* Disciplines.swift */; };
+		C15ECE8D2960ADB1005E8007 /* testeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15ECE8C2960ADB1005E8007 /* testeForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		C144912B295F65A500057739 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		C144912E295F660700057739 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		C1449130295F661300057739 /* Disciplines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; };
+		C15ECE8C2960ADB1005E8007 /* testeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,8 @@
 			children = (
 				C144912B295F65A500057739 /* File.swift */,
 				C129B20F295F90EC00066555 /* ColorsOfAPP.swift */,
+				C15ECE8C2960ADB1005E8007 /* testeForm.swift */,
+				C15ECE8E2960AF79005E8007 /* UiTests */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -135,6 +139,13 @@
 			children = (
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		C15ECE8E2960AF79005E8007 /* UiTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UiTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				C1449131295F661300057739 /* Disciplines.swift in Sources */,
 				C144912C295F65A500057739 /* File.swift in Sources */,
 				C129B20E295F8B9700066555 /* SummaryCard.swift in Sources */,
+				C15ECE8D2960ADB1005E8007 /* testeForm.swift in Sources */,
 				C144912F295F660700057739 /* Profile.swift in Sources */,
 				C1449122295F611800057739 /* CalculadoraDeNotas.xcdatamodeld in Sources */,
 				C129B20A295F7E4200066555 /* ProfileBackground.swift in Sources */,
