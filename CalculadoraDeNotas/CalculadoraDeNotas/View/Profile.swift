@@ -3,11 +3,12 @@
 //  CalculadoraDeNotas
 //
 //  Created by Bruno Brito on 30/12/22.
-//
+//  bruno ama marina mais do que tudo na vida
 
 import SwiftUI
-import Photos
-import PhotosUI
+
+//TODO: - Implementar botão de configuração no Navigation Bar
+///O .navigationBarItem vai ser descontinuado, e no lugar será usado .toolbar, porém o método não está funcionando direito, pesquisar o porque
 
 struct Profile: View {
     
@@ -52,8 +53,7 @@ struct Profile: View {
             }
             
         }
-        //TODO: - Implantar botão de configuração no toolbar ddesta view
-        .toolbar(content: Image(systemName: "gearshape"))
+        
     }
 }
 
