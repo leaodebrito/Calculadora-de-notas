@@ -10,13 +10,18 @@ import SwiftUI
 
 struct Profile: View {
     
-    @State var nomeEstudante: String = "Bruno Leão"
-    @State var cursoEstudante: String  = "Arquitetura e Urbanismo"
-    @State var instituicaoEstudante: String = "Universidade Federal da Bahia"
+    //Acesso a sheet de configuração
+    @State var acessarConfiguracao: Bool = false
+    
+    //Mudança de cor conforme status do sistema
+    @Environment(\.colorScheme) var colorScheme
+    
     
     
     //Variáveis temporárias
-
+    @State var nomeEstudante: String = "Bruno Leão"
+    @State var cursoEstudante: String  = "Arquitetura e Urbanismo"
+    @State var instituicaoEstudante: String = "Universidade Federal da Bahia"
     
     var body: some View {
         NavigationStack{
@@ -42,10 +47,13 @@ struct Profile: View {
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button(action: {
-                        print("funcionando")
+                        acessarConfiguracao.toggle()
                     }, label: {
                         Image(systemName: "gearshape")
-                    })
+                            .foregroundColor(.black)
+                    }).sheet(isPresented: $acessarConfiguracao) {
+                        Configuration()
+                    }
                 }
             }
             
