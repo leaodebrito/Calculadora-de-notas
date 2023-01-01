@@ -40,6 +40,10 @@ struct Profile: View {
                     StudentInformation(nomeEstudante: nomeEstudante, curso: cursoEstudante, instituicao: instituicaoEstudante)
                         .padding(.bottom)
                     
+                    SummaryCard(mediaGlobal: 9.2, semestre: 5, rankingNaInstituição: 20)
+                    
+                        
+                    
                     
                 }
                 
