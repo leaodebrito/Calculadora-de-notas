@@ -12,7 +12,7 @@ import Charts
 struct Profile: View {
     
     //Acesso a sheet de configuração
-    @State var acessarConfiguracao: Bool = false
+    @State var acessarConfiguracao: Bool = false 
     
     //Mudança de cor conforme status do sistema
     @Environment(\.colorScheme) var colorScheme
