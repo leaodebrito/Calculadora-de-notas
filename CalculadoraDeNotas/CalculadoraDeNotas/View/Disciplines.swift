@@ -25,6 +25,7 @@ struct Disciplines: View {
                 }
             }
             .navigationTitle("Disciplinas")
+            //Botão para criar nova disciplina
             .toolbar{
                 ToolbarItemGroup(placement: .navigationBarTrailing){
                     Button(action: {
