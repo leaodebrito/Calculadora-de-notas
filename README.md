@@ -8,7 +8,7 @@ Aplicativo iOS para gestão de eventos das disciplinas cursadas pelos estudante.
 **Nome do aplicativo:** à definir
 **Nome do projeto:** Calculadora de notas
 
-!()[]
+![](https://github.com/leaodebrito/Calculadora-de-notas/blob/master/Imagens/imagem%20app.jpg?raw=true)
 
 
 ## Tecnologias e frameworks aplicados
