@@ -17,13 +17,15 @@ struct SummaryCard: View {
     let paddingText: CGFloat = 3
     let cornerSize: CGFloat = 20
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         
         ZStack{
             RoundedRectangle(cornerRadius: cornerSize)
                 .padding(.horizontal, 20)
                 .frame(height: 150)
-                .foregroundColor(cardColor)
+                .foregroundColor(colorScheme == .dark ? cardColorDark : cardColor)
             
             VStack{
                 TextoPadrao(imagemDoSistema: "info.circle", tipoInformacao: "Informações Gerais")

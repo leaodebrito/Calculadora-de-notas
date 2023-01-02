@@ -95,6 +95,7 @@
 		C129B206295F6D1C00066555 /* View elements */ = {
 			isa = PBXGroup;
 			children = (
+				C129B20F295F90EC00066555 /* ColorsOfAPP.swift */,
 				C129B207295F6D3E00066555 /* Foto.swift */,
 				C129B209295F7E4200066555 /* ProfileBackground.swift */,
 				C129B20B295F85C800066555 /* StudentInformation.swift */,
@@ -170,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				C144912B295F65A500057739 /* File.swift */,
-				C129B20F295F90EC00066555 /* ColorsOfAPP.swift */,
 				C144911E295F611800057739 /* Persistence.swift */,
 				C15ECE8E2960AF79005E8007 /* UiTests */,
 			);

@@ -20,6 +20,7 @@ struct Profile: View {
     @State private var paddingPadraoH: CGFloat = 25
     
     
+    
     //MARK: - Variáveis temporárias
     //Variáveis
     @State var nomeEstudante: String = "Bruno Leão"
