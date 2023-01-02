@@ -27,11 +27,12 @@ struct Profile: View {
     @State var instituicaoEstudante: String = "Universidade Federal da Bahia"
     
     let semestres: [Semester] = [
-        Semester(semester: "1", average: 9),
+        Semester(semester: "1", average: 9.1),
         Semester(semester: "2", average: 8.5),
         Semester(semester: "3", average: 7.5),
         Semester(semester: "4", average: 9.5),
-        Semester(semester: "5", average: 8.5)
+        Semester(semester: "5", average: 8.5),
+        Semester(semester: "6", average: 7.0),
     ]
     
     
@@ -61,7 +62,7 @@ struct Profile: View {
                         .padding(.leading, paddingPadraoH)
                         .font(.title2)
                     
-                    
+                    //Gráfico de média das notas no semestre
                     Chart(semestres){ semestre in
                         BarMark(
                             x: .value("Semestre", semestre.semester),
@@ -70,11 +71,8 @@ struct Profile: View {
                         .foregroundStyle(Color.blue.gradient)
                         
                     }
-                    .frame(height: 250)
+                    .frame(height: 200)
                     .padding(.horizontal, paddingPadraoH)
-                    
-                        
-                    
                     
                 }
                 

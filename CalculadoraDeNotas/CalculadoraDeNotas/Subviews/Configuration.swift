@@ -17,6 +17,7 @@ struct Configuration: View {
     @State var cidade: String = "Salvador"
     @State var tipo: String = "Universidade"
     @State var instituicao: String = "Universidade Federal da Bahia"
+    @State var media: Float = 7.0
 
     
     @State var notificacoes: Bool = UserDefaults.standard.bool(forKey: "notificacao")
@@ -38,6 +39,7 @@ struct Configuration: View {
                     Text(instituicao)
                     Text("Tipo: \(tipo)")
                     Text("Cidade: \(cidade)")
+                    Text("Média: \(media, specifier: "%.2f")")
                 }
                 
                 Section(header: Text("Notificações")){
