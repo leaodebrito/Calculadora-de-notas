@@ -7,9 +7,46 @@
 
 import SwiftUI
 
+
+
+
 struct Configuration: View {
+    
+    
+    
+    @State var cidade: String = "Salvador"
+    @State var tipo: String = "Universidade"
+    @State var instituicao: String = "Universidade Federal da Bahia"
+
+    
+    @State var notificacoes: Bool = UserDefaults.standard.bool(forKey: "notificacao")
+    @State var promocoes: Bool = UserDefaults.standard.bool(forKey: "promocoes")
+    
+    
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            Form{
+                Section(header: Text("Perfil do usuário")){
+                    Text("Bruno Leão de Brito")
+                    Text("Curso: ")
+                    Text("Semestre: ")
+                }
+                
+                Section(header: Text("Instituição de Ensino")){
+                    Text(instituicao)
+                    Text("Tipo: \(tipo)")
+                    Text("Cidade: \(cidade)")
+                }
+                
+                Section(header: Text("Notificações")){
+                    Toggle("Permitir notificações", isOn: self.$notificacoes)
+                    Toggle("Receber promoções", isOn: $promocoes)
+                }
+            }
+            .navigationTitle("Configuração")
+        }
     }
 }
 
@@ -18,3 +55,6 @@ struct Configuration_Previews: PreviewProvider {
         Configuration()
     }
 }
+
+
+

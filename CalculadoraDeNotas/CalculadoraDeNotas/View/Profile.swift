@@ -6,6 +6,7 @@
 //  bruno ama marina mais do que tudo na vida
 
 import SwiftUI
+import Charts
 
 
 struct Profile: View {
@@ -16,12 +17,23 @@ struct Profile: View {
     //Mudança de cor conforme status do sistema
     @Environment(\.colorScheme) var colorScheme
     
+    @State private var paddingPadraoH: CGFloat = 25
     
     
-    //Variáveis temporárias
+    //MARK: - Variáveis temporárias
+    //Variáveis
     @State var nomeEstudante: String = "Bruno Leão"
     @State var cursoEstudante: String  = "Arquitetura e Urbanismo"
     @State var instituicaoEstudante: String = "Universidade Federal da Bahia"
+    
+    let semestres: [Semester] = [
+        Semester(semester: "1", average: 9),
+        Semester(semester: "2", average: 8.5),
+        Semester(semester: "3", average: 7.5),
+        Semester(semester: "4", average: 9.5),
+        Semester(semester: "5", average: 8.5)
+    ]
+    
     
     var body: some View {
         NavigationStack{
@@ -41,6 +53,25 @@ struct Profile: View {
                         .padding(.bottom)
                     
                     SummaryCard(mediaGlobal: 9.2, semestre: 5, rankingNaInstituição: 20)
+                        .padding(.bottom, 20)
+                    
+                    
+                    Text("Média por semestre")
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                        .padding(.leading, paddingPadraoH)
+                        .font(.title2)
+                    
+                    
+                    Chart(semestres){ semestre in
+                        BarMark(
+                            x: .value("Semestre", semestre.semester),
+                            y: .value("Média", semestre.average)
+                        )
+                        .foregroundStyle(Color.blue.gradient)
+                        
+                    }
+                    .frame(height: 250)
+                    .padding(.horizontal, paddingPadraoH)
                     
                         
                     
