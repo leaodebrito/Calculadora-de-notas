@@ -55,13 +55,22 @@ struct NewDiscipline: View {
                             .padding(.bottom)
                     }
                     
-                    Text("Nota unidade 4")
-                        .bold()
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    TextField(" ", text: $nota4)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding(.bottom)
+                    Group{
+                        Text("Nota unidade 4")
+                            .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        TextField(" ", text: $nota4)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.bottom, 10)
+                        
+                      Button(action: {
+                          print("adicionado")
+                      }, label: {
+                          botaoADD(cornerRadius: 5, alturaCard: 200)
+                      })
+                        
+                    }
                     
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -70,17 +79,7 @@ struct NewDiscipline: View {
                 
             }
             .navigationTitle("Nova disciplina")
-            .toolbar{
-                ToolbarItemGroup(placement: .navigationBarTrailing){
-                    Button(action: {
-                        print("adicionar")
-                    }, label: {
-                        Image(systemName: "plus.app")
-                    })
-                    
-                }
-                
-            }
+            
         }
     }
 }
@@ -106,6 +105,7 @@ struct botaoADD: View{
             
             Text("Adicionar disciplina")
                 .font(.title3)
+                .foregroundColor(.white)
                 .bold()
         }
     }
