@@ -10,12 +10,12 @@
 		C107BC092963121600D52C32 /* SemesterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C107BC082963121600D52C32 /* SemesterStruct.swift */; };
 		C107BC0B296340E000D52C32 /* DisciplineStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C107BC0A296340DF00D52C32 /* DisciplineStruct.swift */; };
 		C107BC2629634E2E00D52C32 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C107BC2529634E2E00D52C32 /* DataController.swift */; };
-		C107BC2C296353A400D52C32 /* Disciplina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C107BC2A296353A400D52C32 /* Disciplina.xcdatamodeld */; };
 		C129B208295F6D3E00066555 /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B207295F6D3E00066555 /* Foto.swift */; };
 		C129B20A295F7E4200066555 /* ProfileBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B209295F7E4200066555 /* ProfileBackground.swift */; };
 		C129B20C295F85C800066555 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20B295F85C800066555 /* StudentInformation.swift */; };
 		C129B20E295F8B9700066555 /* SummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20D295F8B9700066555 /* SummaryCard.swift */; };
 		C129B210295F90EC00066555 /* ColorsOfAPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20F295F90EC00066555 /* ColorsOfAPP.swift */; };
+		C135482029637D010094EF03 /* Disciplinas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C135481E29637D010094EF03 /* Disciplinas.xcdatamodeld */; };
 		C1449116295F611600057739 /* CalculadoraDeNotasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */; };
 		C1449118295F611600057739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449117295F611600057739 /* ContentView.swift */; };
 		C144911A295F611800057739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1449119295F611800057739 /* Assets.xcassets */; };
@@ -27,20 +27,33 @@
 		C15ECE8D2960ADB1005E8007 /* testeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15ECE8C2960ADB1005E8007 /* testeForm.swift */; };
 		C15ECE902960B255005E8007 /* ChartTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15ECE8F2960B255005E8007 /* ChartTest.swift */; };
 		C15ECE922960B4AD005E8007 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15ECE912960B4AD005E8007 /* Configuration.swift */; };
+		C17AD1362963712E0066DFDB /* NotasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD1352963712E0066DFDB /* NotasUITests.swift */; };
+		C17AD1382963712E0066DFDB /* NotasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */; };
+		C17AD13F2963741D0066DFDB /* DisciplineCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD13E2963741D0066DFDB /* DisciplineCalculation.swift */; };
 		C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */; };
 		C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C17AD1392963712E0066DFDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C144910A295F611600057739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1449111295F611600057739;
+			remoteInfo = Notas;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C107BC082963121600D52C32 /* SemesterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterStruct.swift; sourceTree = "<group>"; };
 		C107BC0A296340DF00D52C32 /* DisciplineStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineStruct.swift; sourceTree = "<group>"; };
 		C107BC2529634E2E00D52C32 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		C107BC2B296353A400D52C32 /* Disciplina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Disciplina.xcdatamodel; sourceTree = "<group>"; };
 		C129B207295F6D3E00066555 /* Foto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = "<group>"; };
 		C129B209295F7E4200066555 /* ProfileBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBackground.swift; sourceTree = "<group>"; };
 		C129B20B295F85C800066555 /* StudentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		C129B20D295F8B9700066555 /* SummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCard.swift; sourceTree = "<group>"; };
 		C129B20F295F90EC00066555 /* ColorsOfAPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsOfAPP.swift; sourceTree = "<group>"; };
+		C135481F29637D010094EF03 /* Disciplinas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Disciplinas.xcdatamodel; sourceTree = "<group>"; };
 		C1449112295F611600057739 /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraDeNotasApp.swift; sourceTree = "<group>"; };
 		C1449117295F611600057739 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,12 +66,23 @@
 		C15ECE8C2960ADB1005E8007 /* testeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeForm.swift; sourceTree = "<group>"; };
 		C15ECE8F2960B255005E8007 /* ChartTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTest.swift; sourceTree = "<group>"; };
 		C15ECE912960B4AD005E8007 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		C17AD1332963712E0066DFDB /* NotasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17AD1352963712E0066DFDB /* NotasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasUITests.swift; sourceTree = "<group>"; };
+		C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C17AD13E2963741D0066DFDB /* DisciplineCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineCalculation.swift; sourceTree = "<group>"; };
 		C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiscipline.swift; sourceTree = "<group>"; };
 		C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C144910F295F611600057739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17AD1302963712E0066DFDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C1449114295F611600057739 /* CalculadoraDeNotas */,
+				C17AD1342963712E0066DFDB /* NotasUITests */,
 				C1449113295F611600057739 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				C1449112295F611600057739 /* Notas.app */,
+				C17AD1332963712E0066DFDB /* NotasUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +132,7 @@
 				C129B206295F6D1C00066555 /* View elements */,
 				C144912A295F657E00057739 /* Helper */,
 				C107BC2529634E2E00D52C32 /* DataController.swift */,
-				C107BC2A296353A400D52C32 /* Disciplina.xcdatamodeld */,
+				C135481E29637D010094EF03 /* Disciplinas.xcdatamodeld */,
 				C1449119295F611800057739 /* Assets.xcassets */,
 				C144911B295F611800057739 /* Preview Content */,
 			);
@@ -135,6 +161,7 @@
 			children = (
 				C107BC082963121600D52C32 /* SemesterStruct.swift */,
 				C107BC0A296340DF00D52C32 /* DisciplineStruct.swift */,
+				C17AD13E2963741D0066DFDB /* DisciplineCalculation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +196,15 @@
 			path = UiTests;
 			sourceTree = "<group>";
 		};
+		C17AD1342963712E0066DFDB /* NotasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C17AD1352963712E0066DFDB /* NotasUITests.swift */,
+				C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */,
+			);
+			path = NotasUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +225,24 @@
 			productReference = C1449112295F611600057739 /* Notas.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C17AD1322963712E0066DFDB /* NotasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C17AD13B2963712E0066DFDB /* Build configuration list for PBXNativeTarget "NotasUITests" */;
+			buildPhases = (
+				C17AD12F2963712E0066DFDB /* Sources */,
+				C17AD1302963712E0066DFDB /* Frameworks */,
+				C17AD1312963712E0066DFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C17AD13A2963712E0066DFDB /* PBXTargetDependency */,
+			);
+			name = NotasUITests;
+			productName = NotasUITests;
+			productReference = C17AD1332963712E0066DFDB /* NotasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +255,10 @@
 				TargetAttributes = {
 					C1449111295F611600057739 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					C17AD1322963712E0066DFDB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C1449111295F611600057739;
 					};
 				};
 			};
@@ -218,6 +276,7 @@
 			projectRoot = "";
 			targets = (
 				C1449111295F611600057739 /* Notas */,
+				C17AD1322963712E0066DFDB /* NotasUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +288,13 @@
 			files = (
 				C144911D295F611800057739 /* Preview Assets.xcassets in Resources */,
 				C144911A295F611800057739 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17AD1312963712E0066DFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +314,7 @@
 				C15ECE8D2960ADB1005E8007 /* testeForm.swift in Sources */,
 				C15ECE922960B4AD005E8007 /* Configuration.swift in Sources */,
 				C144912F295F660700057739 /* Profile.swift in Sources */,
-				C107BC2C296353A400D52C32 /* Disciplina.xcdatamodeld in Sources */,
+				C135482029637D010094EF03 /* Disciplinas.xcdatamodeld in Sources */,
 				C129B20A295F7E4200066555 /* ProfileBackground.swift in Sources */,
 				C144911F295F611800057739 /* Persistence.swift in Sources */,
 				C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */,
@@ -256,13 +322,31 @@
 				C107BC2629634E2E00D52C32 /* DataController.swift in Sources */,
 				C1449118295F611600057739 /* ContentView.swift in Sources */,
 				C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */,
+				C17AD13F2963741D0066DFDB /* DisciplineCalculation.swift in Sources */,
 				C129B20C295F85C800066555 /* StudentInformation.swift in Sources */,
 				C107BC092963121600D52C32 /* SemesterStruct.swift in Sources */,
 				C1449116295F611600057739 /* CalculadoraDeNotasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C17AD12F2963712E0066DFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17AD1382963712E0066DFDB /* NotasUITestsLaunchTests.swift in Sources */,
+				C17AD1362963712E0066DFDB /* NotasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C17AD13A2963712E0066DFDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1449111295F611600057739 /* Notas */;
+			targetProxy = C17AD1392963712E0066DFDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C1449123295F611800057739 /* Debug */ = {
@@ -439,6 +523,40 @@
 			};
 			name = Release;
 		};
+		C17AD13C2963712E0066DFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J385NJ2F59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leaodebrito.NotasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Notas;
+			};
+			name = Debug;
+		};
+		C17AD13D2963712E0066DFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J385NJ2F59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leaodebrito.NotasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Notas;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,16 +578,25 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C17AD13B2963712E0066DFDB /* Build configuration list for PBXNativeTarget "NotasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17AD13C2963712E0066DFDB /* Debug */,
+				C17AD13D2963712E0066DFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C107BC2A296353A400D52C32 /* Disciplina.xcdatamodeld */ = {
+		C135481E29637D010094EF03 /* Disciplinas.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C107BC2B296353A400D52C32 /* Disciplina.xcdatamodel */,
+				C135481F29637D010094EF03 /* Disciplinas.xcdatamodel */,
 			);
-			currentVersion = C107BC2B296353A400D52C32 /* Disciplina.xcdatamodel */;
-			path = Disciplina.xcdatamodeld;
+			currentVersion = C135481F29637D010094EF03 /* Disciplinas.xcdatamodel */;
+			path = Disciplinas.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

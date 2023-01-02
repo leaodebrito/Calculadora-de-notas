@@ -9,12 +9,15 @@ import SwiftUI
 
 struct NewDiscipline: View {
     
+    @Environment(\.managedObjectContext) private var moc
+    @FetchRequest(sortDescriptors: []) var disciplina: FetchedResults<Disciplina>
+    
     @State var nomeDisciplina: String = ""
     @State var nota1: String = ""
     @State var nota2: String = ""
     @State var nota3: String = ""
     @State var nota4: String = ""
-    @State var semestre: Int = 0
+    @State var semestre: String = ""
     
     
     var body: some View {
@@ -33,10 +36,15 @@ struct NewDiscipline: View {
                         Text("Nota unidade 1")
                             .bold()
                             .frame(maxWidth: .infinity, alignment: .leading)
-                        
+                   
                         TextField(" ", text: $nota1)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.bottom)
+                            .keyboardType(.decimalPad)
+                        
+                    }
+                    
+                    Group{
                         
                         Text("Nota unidade 2")
                             .bold()
@@ -45,6 +53,7 @@ struct NewDiscipline: View {
                         TextField(" ", text: $nota2)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.bottom)
+                            .keyboardType(.decimalPad)
                         
                         Text("Nota unidade 3")
                             .bold()
@@ -53,6 +62,7 @@ struct NewDiscipline: View {
                         TextField(" ", text: $nota3)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.bottom)
+                            .keyboardType(.decimalPad)
                     }
                     
                     Group{
@@ -62,10 +72,29 @@ struct NewDiscipline: View {
                         
                         TextField(" ", text: $nota4)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.bottom)
+                            .keyboardType(.decimalPad)
+                        
+                        Text("Semestre corrente")
+                            .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        TextField(" ", text: $semestre)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.bottom, 10)
+                            .keyboardType(.numberPad)
                         
                       Button(action: {
                           print("adicionado")
+                          let disciplina = Disciplina(context: moc)
+                          disciplina.id = UUID()
+                          disciplina.nome = nomeDisciplina
+                          disciplina.nota1 = nota1
+                          disciplina.nota2 = nota2
+                          disciplina.nota3 = nota3
+                          disciplina.nota4 = nota4
+                          
+                          try? moc.save()
                       }, label: {
                           botaoADD(cornerRadius: 5, alturaCard: 200)
                       })

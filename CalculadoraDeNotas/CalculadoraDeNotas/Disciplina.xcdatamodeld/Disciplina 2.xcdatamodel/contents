@@ -18,5 +18,4 @@
         <attribute name="nota4" optional="YES" attributeType="String"/>
         <attribute name="semestre" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
-    <configuration name="Configuration"/>
 </model>

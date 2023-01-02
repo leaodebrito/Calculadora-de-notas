@@ -11,8 +11,7 @@ import SwiftUI
 struct Disciplines: View {
     
     @Environment(\.managedObjectContext) private var moc
-    
-    @FetchRequest(sortDescriptors: []) var disciplina: FetchedResults<Materia>
+    @FetchRequest(sortDescriptors: []) var disciplina: FetchedResults<Disciplina>
     
     
     @State var addNovaDisciplina: Bool = false
