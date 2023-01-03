@@ -15,6 +15,7 @@
 		C129B20C295F85C800066555 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20B295F85C800066555 /* StudentInformation.swift */; };
 		C129B20E295F8B9700066555 /* SummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20D295F8B9700066555 /* SummaryCard.swift */; };
 		C129B210295F90EC00066555 /* ColorsOfAPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129B20F295F90EC00066555 /* ColorsOfAPP.swift */; };
+		C12DD30E2964B393005D8F97 /* GradeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12DD30D2964B393005D8F97 /* GradeTable.swift */; };
 		C135482029637D010094EF03 /* Disciplinas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C135481E29637D010094EF03 /* Disciplinas.xcdatamodeld */; };
 		C1449116295F611600057739 /* CalculadoraDeNotasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */; };
 		C1449118295F611600057739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1449117295F611600057739 /* ContentView.swift */; };
@@ -53,6 +54,7 @@
 		C129B20B295F85C800066555 /* StudentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		C129B20D295F8B9700066555 /* SummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCard.swift; sourceTree = "<group>"; };
 		C129B20F295F90EC00066555 /* ColorsOfAPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsOfAPP.swift; sourceTree = "<group>"; };
+		C12DD30D2964B393005D8F97 /* GradeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTable.swift; sourceTree = "<group>"; };
 		C135481F29637D010094EF03 /* Disciplinas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Disciplinas.xcdatamodel; sourceTree = "<group>"; };
 		C1449112295F611600057739 /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraDeNotasApp.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				C129B209295F7E4200066555 /* ProfileBackground.swift */,
 				C129B20B295F85C800066555 /* StudentInformation.swift */,
 				C129B20D295F8B9700066555 /* SummaryCard.swift */,
+				C12DD30D2964B393005D8F97 /* GradeTable.swift */,
 			);
 			path = "View elements";
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				C144911F295F611800057739 /* Persistence.swift in Sources */,
 				C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */,
 				C129B208295F6D3E00066555 /* Foto.swift in Sources */,
+				C12DD30E2964B393005D8F97 /* GradeTable.swift in Sources */,
 				C107BC2629634E2E00D52C32 /* DataController.swift in Sources */,
 				C1449118295F611600057739 /* ContentView.swift in Sources */,
 				C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */,
