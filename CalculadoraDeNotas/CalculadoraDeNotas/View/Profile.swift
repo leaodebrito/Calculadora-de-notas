@@ -8,6 +8,7 @@
 import SwiftUI
 import Charts
 
+//TODO: - Mudar fonte de dados do gráficos para as listas de disciplinas
 
 struct Profile: View {
     
@@ -85,7 +86,10 @@ struct Profile: View {
                         acessarConfiguracao.toggle()
                     }, label: {
                         Image(systemName: "gearshape")
-                            .foregroundColor(.black)
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .bold()
+                            .padding(.trailing)
                     }).sheet(isPresented: $acessarConfiguracao) {
                         Configuration()
                     }

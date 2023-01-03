@@ -7,10 +7,16 @@
 
 import SwiftUI
 
+//TODO: - Adicionar o dismiss keyboard ao tocar fora do textfield
+
 struct NewDiscipline: View {
     
+    //Persistência de dados
     @Environment(\.managedObjectContext) private var moc
     @FetchRequest(sortDescriptors: []) var disciplina: FetchedResults<Disciplina>
+    
+    //Fechar visualização do sheetview de criação de projeto
+    @Environment (\.presentationMode) var presentationMode
     
     @State var nomeDisciplina: String = ""
     @State var nota1: String = ""
@@ -93,8 +99,20 @@ struct NewDiscipline: View {
                           disciplina.nota2 = nota2
                           disciplina.nota3 = nota3
                           disciplina.nota4 = nota4
+                          disciplina.semestre = semestre
+                                                    
+                          do {
+                              try moc.save()
+                              print("Projeto Salvo")
+                              
+                              DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+                                  presentationMode.wrappedValue.dismiss()
+                              }
+                              
+                          } catch {
+                              print(error.localizedDescription)
+                          }
                           
-                          try? moc.save()
                       }, label: {
                           botaoADD(cornerRadius: 5, alturaCard: 200)
                       })
