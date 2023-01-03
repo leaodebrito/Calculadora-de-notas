@@ -62,6 +62,7 @@ struct Profile: View {
                         .frame(maxWidth: .infinity,alignment: .leading)
                         .padding(.leading, paddingPadraoH)
                         .font(.title2)
+                        .bold()
                     
                     //Gráfico de média das notas no semestre
                     Chart(semestres){ semestre in

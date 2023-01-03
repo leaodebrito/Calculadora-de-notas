@@ -20,8 +20,13 @@ struct Disciplines: View {
         NavigationStack{
             VStack{
                 List(disciplina) { materia in
-                    Text(materia.nome ?? "Desconhecido")
+                    NavigationLink(destination: DisciplineDetails(disciplina: materia),
+                                   label: {
+                        cardDisciplina(nome: materia.nome ?? " - ")
+                    })
+                    
                 }
+                .listStyle(.plain)
             }
             .navigationTitle("Disciplinas")
             //Botão para criar nova disciplina
@@ -43,5 +48,20 @@ struct Disciplines: View {
 struct Disciplines_Previews: PreviewProvider {
     static var previews: some View {
         Disciplines()
+    }
+}
+
+
+struct cardDisciplina: View{
+    
+    @State var nome: String
+    
+    var body: some View{
+        
+        Text("\(nome)")
+            .font(.title2)
+            .bold()
+        
+        
     }
 }
