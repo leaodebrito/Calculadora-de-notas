@@ -6,52 +6,40 @@
 //
 
 import SwiftUI
+import Charts
 
 struct DisciplineDetails: View {
     
     @State var disciplina: Disciplina
     
     @Environment(\.colorScheme) var colorScheme
+    
+    let notas: [Semester] = [
+        Semester(semester: "Nota 1", average: 10),
+        Semester(semester: "Nota 1", average: 8.5),
+        Semester(semester: "Nota 1", average: 6.5),
+        Semester(semester: "Nota 1", average: 9.5),
+    ]
 
     var body: some View {
-        
-       
         NavigationStack{
             ScrollView{
                 VStack{
                     
                     HStack{
                         
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 20)
-                                .padding(.leading, 20)
-                                .frame(height: 230)
-                                .foregroundColor(colorScheme == .dark ? cardColorDark : cardColor)
-                            VStack{
-                                HStack{
-                                    Image(systemName: "number")
-                                    Text("Média")
-                                }
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.horizontal, 35)
-                                .font(.title3)
-                                .bold()
-                                
-                                Divider()
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .padding(.horizontal, 35)
-                                
-                                Text("X.X")
-                                    .font(.title)
-                                    .bold()
-                            }
-                        }
+                        AvaregeTable(media: "10,0", status: "Aprovado(a)")
+                            .padding(.leading, 16)
+                            .padding(.trailing, 6)
                         
                         Spacer()
                         
                         GradeTable(nota1: disciplina.nota1 ?? "0", nota2:  disciplina.nota2 ?? "0", nota3: disciplina.nota3 ?? "0", nota4: disciplina.nota4 ?? "0")
-                        
+                            .padding(.leading, 6)
+                            .padding(.trailing, 16)
                     }
+                    
+                    
                     
                 }
             }

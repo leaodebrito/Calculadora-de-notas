@@ -31,6 +31,7 @@
 		C17AD1362963712E0066DFDB /* NotasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD1352963712E0066DFDB /* NotasUITests.swift */; };
 		C17AD1382963712E0066DFDB /* NotasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */; };
 		C17AD13F2963741D0066DFDB /* DisciplineCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD13E2963741D0066DFDB /* DisciplineCalculation.swift */; };
+		C1A206442971E7F000A746D2 /* AvaregeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A206432971E7F000A746D2 /* AvaregeTable.swift */; };
 		C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */; };
 		C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		C17AD1352963712E0066DFDB /* NotasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasUITests.swift; sourceTree = "<group>"; };
 		C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C17AD13E2963741D0066DFDB /* DisciplineCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineCalculation.swift; sourceTree = "<group>"; };
+		C1A206432971E7F000A746D2 /* AvaregeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaregeTable.swift; sourceTree = "<group>"; };
 		C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiscipline.swift; sourceTree = "<group>"; };
 		C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				C129B20B295F85C800066555 /* StudentInformation.swift */,
 				C129B20D295F8B9700066555 /* SummaryCard.swift */,
 				C12DD30D2964B393005D8F97 /* GradeTable.swift */,
+				C1A206432971E7F000A746D2 /* AvaregeTable.swift */,
 			);
 			path = "View elements";
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */,
 				C17AD13F2963741D0066DFDB /* DisciplineCalculation.swift in Sources */,
 				C129B20C295F85C800066555 /* StudentInformation.swift in Sources */,
+				C1A206442971E7F000A746D2 /* AvaregeTable.swift in Sources */,
 				C107BC092963121600D52C32 /* SemesterStruct.swift in Sources */,
 				C1449116295F611600057739 /* CalculadoraDeNotasApp.swift in Sources */,
 			);
