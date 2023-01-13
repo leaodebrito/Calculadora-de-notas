@@ -18,7 +18,6 @@ struct Profile: View {
     //Mudança de cor conforme status do sistema
     @Environment(\.colorScheme) var colorScheme
     
-    @State private var paddingPadraoH: CGFloat = 25
     
     
     
@@ -56,14 +55,11 @@ struct Profile: View {
                         .padding(.bottom)
                     
                     SummaryCard(mediaGlobal: 9.2, semestre: 5, rankingNaInstituição: 20)
-                        .padding(.bottom, 20)
+                        .padding(.bottom, 24)
+                        .padding(.horizontal, 12)
                     
-                    
-                    Text("Média por semestre")
-                        .frame(maxWidth: .infinity,alignment: .leading)
-                        .padding(.leading, paddingPadraoH)
-                        .font(.title2)
-                        .bold()
+                    TituloSecoes(parametro: "Media por semestre")
+                        .padding(.leading, 24)
                     
                     //Gráfico de média das notas no semestre
                     Chart(semestres){ semestre in
@@ -75,7 +71,7 @@ struct Profile: View {
                         
                     }
                     .frame(height: 200)
-                    .padding(.horizontal, paddingPadraoH)
+                    .padding(.horizontal, 24)
                     
                 }
                 

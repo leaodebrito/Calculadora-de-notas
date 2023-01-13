@@ -41,10 +41,7 @@ struct DisciplineDetails: View {
                             .padding(.trailing, 16)
                     }
                     
-                    Text("Distribuição de notas")
-                        .font(.title2)
-                        .bold()
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    TituloSecoes(parametro: "Distribuição de Notas")
                         .padding(.leading, 16)
                         .padding(.vertical, 16)
                     
@@ -58,6 +55,11 @@ struct DisciplineDetails: View {
                     }
                     .frame(height: 200)
                     .padding(.horizontal, 16)
+                    
+                    
+                    TituloSecoes(parametro: "Datas importantes")
+                        .padding(.leading, 16)
+                        .padding(.vertical, 16)
                     
                 }
                 .padding(.top)
@@ -85,5 +87,21 @@ struct DisciplineDetails: View {
 struct DisciplineDetails_Previews: PreviewProvider {
     static var previews: some View {
         DisciplineDetails(disciplina: Disciplina())
+    }
+}
+
+
+
+struct TituloSecoes: View{
+    
+    @State var parametro: String = "-"
+    
+    var body: some View{
+        
+        Text(parametro)
+            .font(.title2)
+            .bold()
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
     }
 }

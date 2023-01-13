@@ -23,18 +23,17 @@ struct SummaryCard: View {
         
         ZStack{
             RoundedRectangle(cornerRadius: cornerSize)
-                .padding(.horizontal, 20)
                 .frame(height: 150)
                 .foregroundColor(colorScheme == .dark ? cardColorDark : cardColor)
             
             VStack{
                 TextoPadrao(imagemDoSistema: "info.circle", tipoInformacao: "Informações Gerais")
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 30)
+                .padding(.horizontal, 24)
                 .bold()
                 
                 Divider()
-                    .padding(.horizontal, 30)
+                    .padding(.horizontal, 24)
                 
                 HStack{
                     VStack{
@@ -69,7 +68,7 @@ struct SummaryCard: View {
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 40)
+                .padding(.horizontal, 24)
                 
             }
         }

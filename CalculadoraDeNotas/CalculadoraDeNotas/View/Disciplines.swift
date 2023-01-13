@@ -26,7 +26,7 @@ struct Disciplines: View {
                 List(disciplina) { materia in
                     NavigationLink(destination: DisciplineDetails(disciplina: materia),
                                    label: {
-                        cardDisciplina(nome: materia.nome ?? " - ", semestre: materia.semestre ?? "-")
+                        cardDisciplina(nome: materia.nome ?? " - ", semestre: materia.semestre ?? "-", media: materia.nota1 ?? "-")
                     })
                     
                 }
@@ -65,6 +65,7 @@ struct cardDisciplina: View{
     
     @State var nome: String
     @State var semestre: String
+    @State var media: String
     
     var body: some View{
         
@@ -72,7 +73,20 @@ struct cardDisciplina: View{
             Text("\(nome)")
                 .font(.title2)
                 .bold()
-            Text("\(semestre) semestre")
+                .frame(maxWidth: .infinity,alignment: .leading)
+                .padding(.leading)
+            
+            
+            HStack{
+                Text("\(semestre) semestre")
+                    .padding(.leading)
+                
+                Spacer()
+                
+                Text("Média: \(media)")
+                    .padding(.trailing)
+            }
+            .padding(.top,3)
         }
     }
 }
