@@ -22,6 +22,10 @@ struct ContentView: View {
                 .tabItem{
                     Label("Disciplinas", systemImage: "list.bullet")
                 }
+            Calendar()
+                .tabItem{
+                    Label("Calendário", systemImage: "calendar")
+                }
             
         }
         
