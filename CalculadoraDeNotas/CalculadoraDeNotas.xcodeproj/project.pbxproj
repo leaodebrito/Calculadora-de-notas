@@ -34,6 +34,10 @@
 		C1A206442971E7F000A746D2 /* AvaregeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A206432971E7F000A746D2 /* AvaregeTable.swift */; };
 		C1A206462971F41C00A746D2 /* EdicaoDisciplina.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A206452971F41C00A746D2 /* EdicaoDisciplina.swift */; };
 		C1A206482971FAB300A746D2 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A206472971FAB300A746D2 /* Calendar.swift */; };
+		C1A2064D297202CD00A746D2 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2064C297202CD00A746D2 /* SplashView.swift */; };
+		C1A2064F2972030F00A746D2 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2064E2972030F00A746D2 /* MotherView.swift */; };
+		C1A20651297204D800A746D2 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A20650297204D700A746D2 /* ViewRouter.swift */; };
+		C1A206532972054900A746D2 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A206522972054900A746D2 /* Registration.swift */; };
 		C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */; };
 		C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +82,10 @@
 		C1A206432971E7F000A746D2 /* AvaregeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaregeTable.swift; sourceTree = "<group>"; };
 		C1A206452971F41C00A746D2 /* EdicaoDisciplina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdicaoDisciplina.swift; sourceTree = "<group>"; };
 		C1A206472971FAB300A746D2 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		C1A2064C297202CD00A746D2 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C1A2064E2972030F00A746D2 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		C1A20650297204D700A746D2 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		C1A206522972054900A746D2 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiscipline.swift; sourceTree = "<group>"; };
 		C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,8 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				C1449115295F611600057739 /* CalculadoraDeNotasApp.swift */,
+				C1A2064C297202CD00A746D2 /* SplashView.swift */,
 				C1449117295F611600057739 /* ContentView.swift */,
 				C1449128295F61EB00057739 /* View */,
+				C1A206492971FE9400A746D2 /* SplashView */,
 				C144912D295F65E100057739 /* Subviews */,
 				C1449129295F61F700057739 /* Models */,
 				C129B206295F6D1C00066555 /* View elements */,
@@ -215,6 +225,16 @@
 				C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */,
 			);
 			path = NotasUITests;
+			sourceTree = "<group>";
+		};
+		C1A206492971FE9400A746D2 /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2064E2972030F00A746D2 /* MotherView.swift */,
+				C1A20650297204D700A746D2 /* ViewRouter.swift */,
+				C1A206522972054900A746D2 /* Registration.swift */,
+			);
+			path = SplashView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +341,7 @@
 				C1449131295F661300057739 /* Disciplines.swift in Sources */,
 				C107BC0B296340E000D52C32 /* DisciplineStruct.swift in Sources */,
 				C15ECE902960B255005E8007 /* ChartTest.swift in Sources */,
+				C1A2064F2972030F00A746D2 /* MotherView.swift in Sources */,
 				C1A206482971FAB300A746D2 /* Calendar.swift in Sources */,
 				C144912C295F65A500057739 /* File.swift in Sources */,
 				C129B20E295F8B9700066555 /* SummaryCard.swift in Sources */,
@@ -331,6 +352,8 @@
 				C129B20A295F7E4200066555 /* ProfileBackground.swift in Sources */,
 				C144911F295F611800057739 /* Persistence.swift in Sources */,
 				C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */,
+				C1A20651297204D800A746D2 /* ViewRouter.swift in Sources */,
+				C1A206532972054900A746D2 /* Registration.swift in Sources */,
 				C129B208295F6D3E00066555 /* Foto.swift in Sources */,
 				C1A206462971F41C00A746D2 /* EdicaoDisciplina.swift in Sources */,
 				C12DD30E2964B393005D8F97 /* GradeTable.swift in Sources */,
@@ -338,6 +361,7 @@
 				C1449118295F611600057739 /* ContentView.swift in Sources */,
 				C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */,
 				C17AD13F2963741D0066DFDB /* DisciplineCalculation.swift in Sources */,
+				C1A2064D297202CD00A746D2 /* SplashView.swift in Sources */,
 				C129B20C295F85C800066555 /* StudentInformation.swift in Sources */,
 				C1A206442971E7F000A746D2 /* AvaregeTable.swift in Sources */,
 				C107BC092963121600D52C32 /* SemesterStruct.swift in Sources */,
