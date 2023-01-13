@@ -32,6 +32,7 @@
 		C17AD1382963712E0066DFDB /* NotasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */; };
 		C17AD13F2963741D0066DFDB /* DisciplineCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AD13E2963741D0066DFDB /* DisciplineCalculation.swift */; };
 		C1A206442971E7F000A746D2 /* AvaregeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A206432971E7F000A746D2 /* AvaregeTable.swift */; };
+		C1A206462971F41C00A746D2 /* EdicaoDisciplina.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A206452971F41C00A746D2 /* EdicaoDisciplina.swift */; };
 		C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */; };
 		C1B72CA129635BED0086AD53 /* DisciplineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		C17AD1372963712E0066DFDB /* NotasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C17AD13E2963741D0066DFDB /* DisciplineCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineCalculation.swift; sourceTree = "<group>"; };
 		C1A206432971E7F000A746D2 /* AvaregeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaregeTable.swift; sourceTree = "<group>"; };
+		C1A206452971F41C00A746D2 /* EdicaoDisciplina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdicaoDisciplina.swift; sourceTree = "<group>"; };
 		C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiscipline.swift; sourceTree = "<group>"; };
 		C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 				C15ECE912960B4AD005E8007 /* Configuration.swift */,
 				C1B72C9E29635BB70086AD53 /* NewDiscipline.swift */,
 				C1B72CA029635BED0086AD53 /* DisciplineDetails.swift */,
+				C1A206452971F41C00A746D2 /* EdicaoDisciplina.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				C144911F295F611800057739 /* Persistence.swift in Sources */,
 				C1B72C9F29635BB70086AD53 /* NewDiscipline.swift in Sources */,
 				C129B208295F6D3E00066555 /* Foto.swift in Sources */,
+				C1A206462971F41C00A746D2 /* EdicaoDisciplina.swift in Sources */,
 				C12DD30E2964B393005D8F97 /* GradeTable.swift in Sources */,
 				C107BC2629634E2E00D52C32 /* DataController.swift in Sources */,
 				C1449118295F611600057739 /* ContentView.swift in Sources */,

@@ -12,13 +12,15 @@ struct DisciplineDetails: View {
     
     @State var disciplina: Disciplina
     
+    @State var acessarEdicaoDeDisciplina: Bool = false
+    
     @Environment(\.colorScheme) var colorScheme
     
     let notas: [Semester] = [
         Semester(semester: "Nota 1", average: 10),
-        Semester(semester: "Nota 1", average: 8.5),
-        Semester(semester: "Nota 1", average: 6.5),
-        Semester(semester: "Nota 1", average: 9.5),
+        Semester(semester: "Nota 2", average: 8.5),
+        Semester(semester: "Nota 3", average: 6.5),
+        Semester(semester: "Nota 4", average: 9.5),
     ]
 
     var body: some View {
@@ -39,12 +41,44 @@ struct DisciplineDetails: View {
                             .padding(.trailing, 16)
                     }
                     
+                    Text("Distribuição de notas")
+                        .font(.title2)
+                        .bold()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 16)
+                        .padding(.vertical, 16)
                     
+                    Chart(notas){ avaliacoes in
+                        BarMark(
+                            x: .value("Avaliações", avaliacoes.semester),
+                            y: .value("Nota", avaliacoes.average)
+                        )
+                        .foregroundStyle(Color.blue.gradient)
+                        
+                    }
+                    .frame(height: 200)
+                    .padding(.horizontal, 16)
                     
                 }
+                .padding(.top)
             }
         }
         .navigationTitle(disciplina.nome ?? "Disciplina")
+        .toolbar{
+            ToolbarItem(placement: .navigationBarTrailing){
+             Button(action: {
+                 acessarEdicaoDeDisciplina.toggle()
+             }, label: {
+                 Image(systemName: "pencil")
+                     .resizable()
+                     .frame(width: 25, height: 25)
+                     .bold()
+                     .padding(.trailing)
+             }).sheet(isPresented: $acessarEdicaoDeDisciplina){
+                 EdicaoDisciplina()
+             }
+            }
+        }
     }
 }
 
